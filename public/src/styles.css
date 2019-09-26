@@ -1,0 +1,35 @@
+a, button {
+  font-weight: bold !important;
+  margin: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  font-size: 1.25em;
+  padding: 25px;
+}
+
+h1 {
+  margin: 10px;  
+}
+
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+th {
+  text-align: center;
+}
+
+td, th {
+  padding: 10px;
+}
