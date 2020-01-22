@@ -22,6 +22,14 @@ module.exports = {
       .catch(err => res.json(err));
   },
 
+  like: function(req, res){
+    Pet.findOneAndUpdate({_id: req.params.id}, req.body, {new: true})
+      .then(pet => {
+        res.json(pet ? pet : "No such pet in database")
+      })
+      .catch(err => res.json(err));
+  },
+
   update: function(req, res){
     let pet = new Pet();
     pet.name = req.body.name;

@@ -59,7 +59,7 @@ export class ShowComponent implements OnInit {
   onLike() {
     this.pet.likes ++;
     this.liked_num ++;
-    const obs = this._httpService.updatePet(this.pet._id, this.pet);
+    const obs = this._httpService.likePet(this.pet._id, this.pet);
     obs.subscribe((data: any) => {
       if (data.errors) {
         for (let i in data.errors) {

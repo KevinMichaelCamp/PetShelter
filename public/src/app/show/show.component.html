@@ -28,4 +28,5 @@
   </table>
   <button *ngIf="liked_num < 1" class="btn btn-info" type="button" (click)="onLike()">Like this pet</button>
   <button class="btn btn-success" (click)="onAdopt()">Adopt this pet</button>
+  <p *ngFor="let error of messages" class="text-danger font-weight-bold">{{ error }}</p>
 </div>

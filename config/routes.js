@@ -7,6 +7,7 @@ module.exports = function(app){
   app.post('/animals', controller.create);
   app.get('/animals/:id', controller.read);
   app.put('/animals/:id', controller.update);
+  app.put('/like/:id', controller.like);
   app.delete('/animals/:id', controller.delete);
   app.all("*", (req,res,next) => {
     res.sendFile(path.resolve("./public/dist/public/index.html"))
